@@ -19,7 +19,8 @@ Create ciphertext and output it.
 //#include <cs50.h>
 #include <stdio.h>
 
-const char[] = 
+const char ALPHABET[] = { 'A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z' };
+
 int main(int argc, char* argv[]){
     if(argc != 2){ //check if theres atleast one extra arguement
         printf("Usage: ./caesar key\n");
@@ -27,6 +28,17 @@ int main(int argc, char* argv[]){
         printf("%s\n",argv[1]);
     }
 
+    char plain_text[] = "test";
+    int plain_text_size = sizeof(plain_text) / sizeof(plain_text[0]);
 
+    int new_indexes[plain_text_size];
 
+    for(int i = 0; i < sizeof(plain_text); i++){
+        for(int z = 0; z < sizeof(ALPHABET); z++){
+            if(plain_text[i] == ALPHABET[z]){
+                new_indexes[i] = ALPHABET[z];
+                printf("added %i", ALPHABET[z]);
+            }
+        }
+    }
 }
