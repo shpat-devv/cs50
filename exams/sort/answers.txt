@@ -1,0 +1,15 @@
+    sort1 uses: Bubble sort
+
+    How do you know?: In both random and reversed lists sort1 performed the worst, but in sorted lists it performed pretty well.
+    I believe that its bubble sort because in best case scenarios the runtime is big omega of n
+
+    sort2 uses: Merge sort
+
+    How do you know?: In all scenarios sort2 performed as one of the best, and since it was consistantly fast i believe its merge sort
+
+    sort3 uses: Selection sort
+
+    How do you know?: It performed constintantly worse than sort2 in random and reversed lists but better than sort1.
+    in sorted lists however sort1 and sort 2 both performed better, making me believe it has a consistant run time unlike bubble sort but still worse than merge sort
+
+
